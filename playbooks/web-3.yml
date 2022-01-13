@@ -1,0 +1,10 @@
+---
+- name: Instalar mod_ssl
+  hosts: all
+  become: yes
+  tasks:
+  - name: Software Install
+    yum:
+      name: mod_ssl
+      state: latest
+    when: inventory_hostname in '192.168.56.12'
