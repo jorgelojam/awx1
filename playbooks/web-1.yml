@@ -1,6 +1,6 @@
 ---
 - name: Instalar servidor web
-  hosts: ssh3
+  hosts: all
   become: yes
   tasks:
   - name: Software Install
