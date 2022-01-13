@@ -1,0 +1,7 @@
+---
+- name: Iniciar servidor de aplicaciones
+  hosts: all
+  tasks:
+  - name: Iniciar servicio
+    script:
+      cmd: /opt/wildfly-26.0.0.Final/bin/standalone.sh -b 0.0.0.0
